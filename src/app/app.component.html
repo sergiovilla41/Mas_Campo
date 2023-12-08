@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  <!-- Encabezado con logo -->
+  <header>
+    <!-- Puedes insertar aquí el logo de tu empresa -->
+    <a href="/Home"> <img id="mas"  src="assets/mas_campo_logo.png" alt="Logo de Más Campo"></a>
+    <!-- <img src="logo.png" alt="Logo de la empresa"> -->
+
+    <form action="/buscar" method="get">
+      <input type="text" name="q" placeholder="Buscar...">
+      <img class="lupa" src="assets/Lupa.png" alt="Buscar">
+    </form>
+    <button>Registro</button>
+    <a href="/carrito-de-compras">
+      <img class="carrito" src="assets/Carrito.png" alt="Carrito de compras">
+    </a>
+  </header>
+  <!--imagen del medio-->
+
+  <!-- Barra de Navegación -->
+  <nav>
+    <ul>
+      <li><a href="/Home">Home</a></li>
+      <li class="dropdown">
+        <a>Productos</a>
+        <ul>
+          <li><a href="/Frutas">Frutas</a></li>
+          <li><a href="/Verduras">Verduras</a></li>
+          <li><a href="/Insecticidas">Insecticidas</a></li>
+          <li><a href="/Herramientas">Herramientas</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a>Guía de Aprendizaje</a>
+        <ul>
+          <li><a href="/aprendizaje/videos">Videos</a></li>
+          <li><a href="/aprendizaje/documentos">Documentos</a></li>
+          <li><a href="/aprendizaje/foro">Foro de Dudas</a></li>
+        </ul>
+      </li>
+      <li><a target="_blank" href="Home">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal de la página -->
+  <router-outlet></router-outlet>
+
+</body>
+</html>

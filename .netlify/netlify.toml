@@ -1,0 +1,6 @@
+[build]
+command = "ng build --prod"
+publish = "dist/mas_campo/browser"
+
+[dev]
+  functionsPort = 34567        # Puerto para funciones durante el desarrollo

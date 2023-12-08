@@ -1,0 +1,81 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+button {
+  background-color: #3498db; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 1em;
+  border: none; /* Sin borde */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer;
+  margin-top: 20px; /* Espaciado superior para separar del párrafo */
+}
+button:hover {
+  background-color: #1215c06b; /* Color de fondo del botón en hover */
+}
+
+header {
+  background-color: #34badb93;
+  padding: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.fruta {
+  background-color: #ffffffad;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+button {
+  display: flex;
+  align-items: center;
+  margin-left: 30%; /* Mueve el botón a la derecha */
+}
+
+button img {
+  width: 70px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  margin-left: 10px; /* Ajusta el margen izquierdo entre el texto y la imagen */
+}
+#Fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el fondo detrás de los demás elementos */
+}
+#tienda{
+  width: 50px; /* Puedes ajustar el valor en píxeles según tus necesidades */
+  height: auto;
+}
+#tienda:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% en hover */
+}
+#ImgF:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 120% en hover */
+}
+#ImgF{
+  width: 200px;
+}
