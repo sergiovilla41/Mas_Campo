@@ -1,0 +1,37 @@
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Foro de Dudas Agrícolas</title>
+
+</head>
+
+<body>
+  <img id="Fondo"  src="assets/Foro/Fondo.jpg" alt="Fondo2">
+  <header>
+    <h1>Foro de Dudas Agrícolas <img id="consulta" src="assets/Foro/consulta.png" alt=""></h1>
+
+  </header>
+
+  <section class="container">
+    <div class="form-container">
+      <form id="questionForm">
+        <label for="question">Haz una pregunta:</label>
+        <textarea id="question" name="question" placeholder="Escribe tu pregunta aquí" required></textarea>
+        <button type="submit">Enviar Pregunta</button>
+      </form>
+    </div>
+
+    <div class="questions-container">
+      <h2>Preguntas</h2>
+      <ul id="questionList">
+        <!-- Aquí se mostrarán las preguntas -->
+      </ul>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+

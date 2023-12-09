@@ -2,18 +2,102 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-}
-
-header {
-  background-color: #a3cbe6; /* Azul */
-  padding: 10px;
+  background-color: #f8f8f8;
+  color: #333;
   text-align: center;
-  color: #fff;
-}
-/*manejo de colores de la barra del home*/
-nav {
-  background-color: #98c2ec; /* Gris-azulado oscuro */
 
+}
+
+/* Estilos para el encabezado principal */
+header {
+  background-color: #3498db94;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para el ícono "más" en el encabezado */
+#mas {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  }
+
+#mas:hover {
+  transform: scale(1.2);
+
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para el campo de texto de búsqueda */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #cccccc9c;
+  border-radius: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el ícono del carrito de compras */
+img.carrito {
+  margin-left: -30%;
+  width: 70px;
+  cursor: pointer;
+ }
+
+img.carrito:hover {
+  transform: scale(1.2);
+
+}
+
+/* Estilos para el ícono de la lupa de búsqueda */
+img.lupa {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+img.lupa:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para el botón */
+button {
+  background-color: rgba(77, 209, 73, 0.425);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(60, 172, 144, 0.706);
+}
+
+/* Estilos para el menú desplegable */
+nav {
+  background-color: #98c2ec63;/*barra de home*/
 }
 
 ul {
@@ -21,6 +105,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 li {
@@ -30,13 +115,13 @@ li {
 
 a {
   text-decoration: none;
-  color: #ecf0f1; /* Blanco */
+  color: #ecf0f1;
   padding: 10px;
   display: block;
 }
 
 a:hover {
-  background-color: #8aa9c7; /* Gris-azulado más oscuro en hover */
+  background-color: #8b9ebb00;
 }
 
 .dropdown {
@@ -46,10 +131,10 @@ a:hover {
 .dropdown ul {
   display: none;
   position: absolute;
-  background-color: #acc9e4; /* color menu desplegable */
+  background-color: #acc9e4;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  width: 150px; /* Ancho del menú desplegable */
+  width: 150px;
 }
 
 .dropdown:hover ul {
@@ -65,116 +150,24 @@ a:hover {
 }
 
 .dropdown a:hover {
-  background-color: #62be4fbe; /* Gris-azulado más oscuro en hover en el menú desplegable */
-}
-input[type="text"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 200px;
+  background-color: #62be4fbe;
 }
 
-img {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+/* Estilos responsivos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column; /* Cambia la dirección de la columna para elementos apilados */
+  }
+
+  form {
+    margin-left: 0;
+  }
 }
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
-  text-align: center;
+.cont {
+  margin-top: 14px;
+  background-color: rgba(77, 209, 73, 0.425); /* Color verde (puedes ajustar el color según tu preferencia) */
+  border-radius: 18px; /* Valor de radio para redondear las esquinas */
+  padding: 10px; /* Ajusta el relleno según tus necesidades */
+  display: inline-block; /* Para que el fondo se ajuste al contenido del párrafo */
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1px; /* Agrega un espacio entre los enlaces */
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  text-align: center;
-}
-
-header {
-  background-color: #3498db94;
-  color: #fff;
-  padding: 5px;
-  display: flex; /* Establece el contenedor como un contenedor flexible */
-  align-items: center; /* Centra los elementos verticalmente */
-}
-
-#mas {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
-#mas:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al 120% en hover */
-}
-form {
-  margin-left: 60%;
-  display: flex;
-  align-items: center;
-}
-
-input[type="text"] {
-  padding: 10px;
-  border: 2px solid #cccccc9c;
-  border-radius: 8px;
-  width: 200px;
-  margin-right: 10px; /* Agrega un espacio a la derecha del campo de búsqueda */
-}
-input:hover {
-  transform: scale(1.05); /* Aumenta el tamaño al 120% en hover */
-}
-
-img.carrito {
-  margin-left: -30%;
-  width: 70px;
-  cursor: pointer;
-
-}
-
-img.carrito:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al 120% en hover */
-}
-
-header img {
-  width: 40px;
-  height: 40px;
-}
-
-img.lupa:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al 120% en hover */
-}
-
-img.lupa {
-margin-right: 12px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease; /* Efecto de transición en la propiedad transform */
-}
-
-button {
-  margin-left: auto;
-  background-color: rgba(77, 209, 73, 0.425); /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  font-size: 1em;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
-}
-
-button:hover {
-  background-color: rgba(60, 172, 144, 0.706); /* Cambia el color de fondo en hover */
-}

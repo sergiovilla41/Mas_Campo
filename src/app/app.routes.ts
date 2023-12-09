@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { VerdurasComponent } from '../Componentes/verduras/verduras.component';
 import { InsecticidasComponent } from '../Componentes/insecticidas/insecticidas.component';
 import { HerramientasComponent } from '../Componentes/herramientas/herramientas.component';
+import { CarComponent } from '../Componentes/car/car.component';
+import { ForoComponent } from '../Componentes/foro/foro.component';
+import { RegistroComponent } from '../Componentes/registro/registro.component';
+import { VideosComponent } from '../Componentes/videos/videos.component';
 //rutas para navegar entre paginas
 export const routes: Routes = [
   {path: '', redirectTo:'Home', pathMatch: 'full'},
@@ -18,5 +22,9 @@ export const routes: Routes = [
    {path: 'Verduras', component:VerdurasComponent},
    {path: 'aprendizaje', component:AprendizajeComponent},
    {path: 'Herramientas', component:HerramientasComponent},
-   {path:'Insecticidas', component:InsecticidasComponent}
+   {path:'Insecticidas', component:InsecticidasComponent},
+   {path:'Car', component:CarComponent},
+   {path:'Registro', component:RegistroComponent},
+   {path:'Videos', component:VideosComponent},
+   {path:'Foro', component:ForoComponent}
 ];

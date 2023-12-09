@@ -18,8 +18,8 @@
       <input type="text" name="q" placeholder="Buscar...">
       <img class="lupa" src="assets/Lupa.png" alt="Buscar">
     </form>
-    <button>Registro</button>
-    <a href="/carrito-de-compras">
+    <a href="/Registro"><button >Registro</button></a>
+    <a href="/Home">
       <img class="carrito" src="assets/Carrito.png" alt="Carrito de compras">
     </a>
   </header>
@@ -30,7 +30,7 @@
     <ul>
       <li><a href="/Home">Home</a></li>
       <li class="dropdown">
-        <a>Productos</a>
+        <a>E-Commerce</a>
         <ul>
           <li><a href="/Frutas">Frutas</a></li>
           <li><a href="/Verduras">Verduras</a></li>
@@ -39,19 +39,25 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a>Guía de Aprendizaje</a>
+        <a>E-Learning</a>
         <ul>
-          <li><a href="/aprendizaje/videos">Videos</a></li>
-          <li><a href="/aprendizaje/documentos">Documentos</a></li>
-          <li><a href="/aprendizaje/foro">Foro de Dudas</a></li>
+          <li><a href="/Videos">Videos</a></li>
+          <li><a href="/Home">Documentos</a></li>
+          <li><a href="/Foro">Foro de Dudas</a></li>
         </ul>
       </li>
-      <li><a target="_blank" href="Home">Contacto</a></li>
+      <li><a  href="/">Contact</a></li>
     </ul>
   </nav>
 
+
   <!-- Contenido principal de la página -->
-  <router-outlet></router-outlet>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="carrito-content" [class.show]="ViewCar">
+
+  </div>
 
 </body>
 </html>
