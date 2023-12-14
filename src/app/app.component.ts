@@ -14,6 +14,7 @@ import { ForoComponent } from "../Componentes/foro/foro.component";
 import { RegistroComponent } from "../Componentes/registro/registro.component";
 import { ReactiveFormsModule } from '@angular/forms';
 import { VideosComponent } from "../Componentes/videos/videos.component";
+import { DocumentosComponent } from "../Componentes/documentos/documentos.component";
 
 const routes: Routes = [
     {path: 'inicio', component:InicioComponent},
@@ -27,7 +28,7 @@ const routes: Routes = [
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, ProductosComponent, AprendizajeComponent, InicioComponent, FrutasComponent, VerdurasComponent, InsecticidasComponent, HerramientasComponent, CarComponent, ForoComponent, RegistroComponent, ReactiveFormsModule, VideosComponent]
+    imports: [CommonModule, RouterOutlet, ProductosComponent, AprendizajeComponent, InicioComponent, FrutasComponent, VerdurasComponent, InsecticidasComponent, HerramientasComponent, CarComponent, ForoComponent, RegistroComponent, ReactiveFormsModule, VideosComponent, DocumentosComponent]
 })
 export class AppComponent {
   ViewCar: boolean = false;

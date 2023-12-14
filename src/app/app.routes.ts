@@ -12,6 +12,7 @@ import { CarComponent } from '../Componentes/car/car.component';
 import { ForoComponent } from '../Componentes/foro/foro.component';
 import { RegistroComponent } from '../Componentes/registro/registro.component';
 import { VideosComponent } from '../Componentes/videos/videos.component';
+import { DocumentosComponent } from '../Componentes/documentos/documentos.component';
 //rutas para navegar entre paginas
 export const routes: Routes = [
   {path: '', redirectTo:'Home', pathMatch: 'full'},
@@ -26,5 +27,6 @@ export const routes: Routes = [
    {path:'Car', component:CarComponent},
    {path:'Registro', component:RegistroComponent},
    {path:'Videos', component:VideosComponent},
-   {path:'Foro', component:ForoComponent}
+   {path:'Foro', component:ForoComponent},
+   {path:'Doc', component:DocumentosComponent}
 ];
